@@ -1,0 +1,202 @@
+<!-- 
+本人刚学javascript
+写的一个比较简单的网站  
+恳请大佬-别喷！！！
+留个名--谢谢谢谢！！！
+
+       .-"""-.
+               / .===. \
+               \/ 6 6 \/
+               ( \___/ )
+  _________ooo__\_____/_____________
+ /                                  \
+ |     I  am  jiaoyang ! ! !        |
+ \_______________________ooo________/ 
+                |  |  |
+                |_ | _|
+                |  |  |
+                |__|__|
+                /-'Y'-\
+               (__/ \__)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>骄阳-三网支付</title>
+     <link rel="shortcut icon" href="https://s4.ax1x.com/2021/12/24/TJtuDg.jpg" type="image/x-icon">
+    <script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <style>
+       
+        .fl1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .fl2 {
+            text-align: center;
+
+        }
+
+        .fl3 {
+            margin-bottom: 50px;
+            margin-top: 30px;
+        }
+
+        .fl3 span {
+            padding: 10px;
+            border-radius: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
+            animation: yanse 5s infinite;
+        }
+
+        #wx {
+            background-color: brown;
+            color: white;
+        }
+
+        #zfb {
+            background-color: brown;
+            color: white;
+        }
+
+        #qq {
+            background-color: brown;
+            color: white;
+        }
+
+        #tp {
+            display: none;
+        }
+
+        #tp1 {
+            display: none;
+        }
+
+        #tp2 {
+            display: none;
+        }
+
+      
+
+        @keyframes yanse {
+            0% {
+                box-shadow: 0px 0px 10px rebeccapurple;
+            }
+
+            20% {
+                box-shadow: 0px 0px 10px rgb(21, 214, 205);
+            }
+
+            40% {
+                box-shadow: 0px 0px 10px rgb(95, 228, 43);
+            }
+
+            60% {
+                box-shadow: 0px 0px 10px rgb(190, 21, 206);
+            }
+
+            80% {
+                box-shadow: 0px 0px 10px rgb(219, 31, 31);
+            }
+
+            100% {
+                box-shadow: 0px 0px 10px rgb(219, 207, 31);
+            }
+        }
+
+        .fl4 {
+            margin: auto;
+            animation: yanse 5s infinite;
+        }
+
+        .wb span a {
+            color: rgb(182, 182, 182);
+            font-size: 12px;
+            text-decoration: none;
+        }
+
+        .wb span {
+            color: rgb(182, 182, 182);
+            font-size: 12px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        
+        }
+        .wb1{
+            margin-top: 50px;
+            color: rgb(182, 182, 182);
+            font-size: 15px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fl1">
+        <div class="fl2">
+            <div class="fl3">
+                <span id="wx">微信</span>
+                <span id="zfb">支付宝</span>
+                <span id="qq">QQ</span>
+            </div>
+            <div>
+                <span><img src="img/wx.jpg" id="tp" width="300px" height="300px" class="fl4"></span>
+                <span><img src="img/zfb.jpg" id="tp1" width="300px" height="300px" class="fl4"></span>
+                <span><img src="img/qq.jpg" id="tp2" width="300px" height="300px" class="fl4"></span>
+                <span><img src="img/zf.jpg" id="tp3" width="300px" height="300px" class="fl4"></span>
+            </div>
+            <div style="margin-top: 30px;">
+                <marquee scrolldelay="600" scrollamount="100">谢谢老板，老板发财~<img src="img/6.gif"></marquee>
+                <marquee scrolldelay="800" scrollamount="100">谢谢老板，老板超级帅~<img src="img/2.png"></marquee>
+                <marquee scrolldelay="700" scrollamount="100">谢谢老板，老板你是我偶像~<img src="img/3.png"></marquee>
+                <marquee scrolldelay="650" scrollamount="100">谢谢老板，老板别犹豫了~<img src="img/5.png"></marquee>
+                <marquee scrolldelay="680" scrollamount="100">谢谢老板，祝老板新的一年，万事如意。<img src="img/1.png"></marquee>
+                <marquee scrolldelay="650" scrollamount="100">谢谢老板，老板YYDS~<img src="img/4.png"></marquee>
+            </div>
+            <!-- 友链 -->
+            <div class="wb1" >====以下是游戏辅助购买地址====</div>
+            <div class="wb">
+                <span><a href="https://mubucm.com/doc/3aG7IgRPzVT">必看</a></span>
+                <span>|</span>
+                <span><a href="https://mubucm.com/doc/2h2-5S0ntn">辅助下载地址</a></span>
+                <span>|</span>
+                <span><a href="https://qm.qq.com/cgi-bin/qm/qr?k=I1JUFQ9LxYDaPQ_O7TudsrXdtuwcaN9X&noverify=0">联系我</a></span>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        var wx = document.getElementById("tp")
+        var zfb = document.getElementById("tp1")
+        var qq = document.getElementById("tp2")
+        var zf = document.getElementById("tp3")
+        $("#wx").click(function () {
+            alert("谢谢老板赞助~")
+            zfb.style.display = "none"
+            wx.style.display = "block"
+            qq.style.display = "none"
+            zf.style.display = "none"
+        })
+        $("#zfb").click(function () {
+            alert("谢谢老板赞助~")
+            wx.style.display = "none"
+            qq.style.display = "none"
+            zfb.style.display = "block"
+            zf.style.display = "none"
+        })
+        $("#qq").click(function () {
+            alert("谢谢老板赞助~")
+            wx.style.display = "none"
+            qq.style.display = "block"
+            zfb.style.display = "none"
+            zf.style.display = "none"
+        })
+    </script>
+</body>
+
+</html>
